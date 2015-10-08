@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="zh" ng-app="App">
+<head>
+  <meta charset="UTF-8">
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+
+	<title>Angular</title>
+  <!-- STYLES -->
+  <!-- build:css lib/css/main.min.css -->
+  <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
+  <!-- endbuild -->
+  <!-- Custom Css -->
+  <link rel="stylesheet" type="text/css" href="css/index.min.css">
+  <!-- SCRIPTS -->
+  <!-- build:js lib/js/main.min.js -->
+  <script type="text/javascript" src="components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <!-- endbuild -->
+  <!-- Custom Scripts -->
+  <script type="text/javascript" src="js/index.min.js"></script>
+</head>
+<body>
+  <div class="btn-group" dropdown>
+    <button id="single-button" type="button" class="btn btn-primary" dropdown-toggle>
+      Button dropdown <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="single-button">
+      <li role="menuitem"><a href="#/home">home</a></li>
+      <li role="menuitem"><a href="#/table">table</a></li>
+    </ul>
+  </div>
+  <div ui-view></div>
+</body>
+</html>
